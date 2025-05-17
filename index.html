@@ -32,7 +32,22 @@
 
 
 
-
+<nav id="hamburger-nav">
+  <div class="logo">John Doe</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
 
 
 
@@ -40,21 +55,173 @@
 
 
 
+<section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text__p2">Frontend Developer</p>
 
+        <!-- Buttons for CV download and contact -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </div>
+        </div>
+      </section>
 
 
 
     <!-- ======= 4-About Section HERE ======= -->
 
 
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <!-- About image -->
+    <div class="section__pic-container">
+      <img
+        src="./assets/about-pic.png"
+        alt="Profile picture"
+        class="about-pic"
+      />
+    </div>
 
+    <!-- About details and text -->
+    <div class="about-details-container">
+      <div class="about-containers">
+        <!-- Experience box -->
+        <div class="details-container">
+          <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>2+ years <br />Frontend Development</p>
+        </div>
+
+        <!-- Education box -->
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+        </div>
+      </div>
+
+      <!-- About paragraph -->
+      <div class="text-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+</section>
 
 
 
 
     <!-- ======= 5-Experiance Section HERE ======= -->
 
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Frontend experience -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>HTML</h3><p>Experienced</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>CSS</h3><p>Experienced</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>SASS</h3><p>Intermediate</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>JavaScript</h3><p>Basic</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>TypeScript</h3><p>Basic</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>Material UI</h3><p>Intermediate</p></div>
+          </article>
+        </div>
+      </div>
 
+      <!-- Backend experience -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>PostgreSQL</h3><p>Basic</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>Node JS</h3><p>Intermediate</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>Express JS</h3><p>Intermediate</p></div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div><h3>Git</h3><p>Intermediate</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow navigation -->
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
 
 
 
